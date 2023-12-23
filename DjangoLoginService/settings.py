@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'DjangoLoginService.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'django_login_service',
+        'USER': 'sjna',
+        'PASSWORD': 'sjna',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
